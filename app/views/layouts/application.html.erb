@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Channel Game Room</title>		
+
+		<%= stylesheet_link_tag '1140', :media => 'screen' %>
+
+		<!--[if lte IE 9]>
+		<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+			<%= stylesheet_link_tag 'ie', :media => 'screen' %>
+		<![endif]-->
+
+		<%= stylesheet_link_tag 'typeimg', :media => 'screen' %>
+		<%= stylesheet_link_tag 'smallerscreen', :media => 'only screen and (max-width: 1023px)' %>
+		<%= stylesheet_link_tag 'mobile', :media => 'handheld, only screen and (max-width: 767px)' %>
+		<%= stylesheet_link_tag 'simple_form', :media => 'screen' %>
+		<%= stylesheet_link_tag 'layout', :media => 'screen' %>
+		
+		<link  href="//fonts.googleapis.com/css?family=Orbitron:400,500,700,900" rel="stylesheet" type="text/css" >
+		
+		<%= csrf_meta_tag %>
+		<%= yield(:head) %>
+	</head>
+	<body>
+
+		<div class="container logo">
+			<div class="row">
+				<div class="twelvecol last">
+					<h1>Channel Game Room</h1>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<%= render "layouts/search" %>
+				<%= render "layouts/top_nav" %>
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="twelvecol last">
+				
+					<div class="sheet">
+						<div class="header">
+							<%= yield(:sheet_header) %>
+						<div>
+							
+						<% flash.each do |name, msg| %>
+				    	<%= content_tag :div, msg, :id => "#{name}" %>
+				    <% end %>
+
+							
+						<%= yield %>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+
+  	<%= javascript_include_tag ['jquery-1.4.4.min', 'rails', 'application'] %>
+		<%= yield(:js) %>
+	</body>
+</html>
+

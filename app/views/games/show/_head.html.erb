@@ -1,0 +1,9 @@
+<% content_for(:sheet_header) do %>
+	<ul>
+		<li><%= link_to "Edit", edit_game_path(@game) %></li>
+	</ul>
+<% end %>
+
+<h1><%= @game.title %></h1>
+
+

@@ -1,0 +1,5 @@
+<h1>Sorry, but something went wrong with the login</h1>
+
+<% if params[:message] %>
+	<strong><%= params[:message].split("_").join(" ").capitalize %></strong>
+<% end %>

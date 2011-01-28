@@ -1,0 +1,21 @@
+<div class="top_nav">
+	<div class="eightcol">
+		<ul>
+			<li><%= link_to "Home", root_url %></li>
+			<li><%= link_to "Games", games_path %></li>
+			<li><%= link_to "Systems", root_url %></li>
+			<li><%= link_to "About", root_url %></li>
+			<li><%= link_to "Contact", root_url %></li>
+		</ul>
+	</div>
+	<div class="fourcol last">
+		<ul>
+		<% if current_user %>
+			<li><%= link_to "Sign Out", signout_path %></li>
+			<li><%= current_user.name %></li>
+		<% else %>
+			<li>Sign in with <%= link_to "Twitter", "/auth/twitter" %> or <%= link_to "FaceBook", "/auth/facebook" %></li>
+		<% end %>
+		</ul>
+	</div>
+</div>

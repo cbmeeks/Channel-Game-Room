@@ -1,0 +1,15 @@
+<%= simple_form_for @game do |f| %>
+
+	<%= f.input :title %>
+	<%= f.input :description %>
+	<%= f.association :system %>
+	
+	
+	<%= f.simple_fields_for :videolinks do |link| %>
+		<%= link.input :url, :label => "Youtube Link " %>
+	<% end %>
+	
+	
+	<%= f.button :submit %> or <%= link_to "Cancel", @game %>
+	
+<% end %>

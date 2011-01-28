@@ -1,0 +1,150 @@
+/* Layout for desktop version */
+
+body {
+	background: #EEE;
+}
+
+
+.logo {
+	background: #9B0000;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#C60000', endColorstr='#9B0000'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#C60000), to(#9B0000)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #C60000,  #9B0000); /* for firefox 3.6+ */
+
+}
+
+.logo h1 {
+	color: #FFF;
+	margin-top: 20px;
+	
+	font-family: 'Orbitron', serif;
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+  text-shadow: none;
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0em;
+  word-spacing: 0em;
+  line-height: 1.2;
+}
+
+
+
+
+.top_nav {
+	margin: 0;
+	padding: 0 0 0 60px;
+}
+
+.top_nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 24px 0 0 0;
+}
+
+.top_nav ul li {
+	display: inline;
+}
+
+.top_nav ul li a {
+	margin: 0 50px 0 0;
+}
+
+
+
+
+.sheet {
+	background: #FFF;
+	border: 1px solid transparent;
+	padding: 20px;
+	margin:  25px;
+	overflow: hidden;
+
+	-moz-box-shadow: #333 0px 0px 15px;
+	-webkit-box-shadow: #333 0px 0px 15px;
+	box-shadow: #333 0px 0px 15px;
+}
+
+
+.sheet .header ul {
+	float: right;
+	list-style: none;
+}
+
+.sheet .header ul li {
+	display: inline;
+}
+
+.sheet .header ul li a {
+
+}
+
+
+.video_info {
+	font-size: 0.8em;
+	float: right;
+	padding-right: 50px;
+}
+
+.video_jump {
+	font-size: 0.8em;
+	float: right;
+	padding-right: 50px;
+}
+
+
+.video_prevnext a {
+	border: 0;
+	margin: 0 30px 0 0;
+	padding: 0;
+}
+
+.video_prevnext img {
+	display: inline;
+}
+
+.video_likeornot a {
+	border: 0;
+	margin: 0 40px 0 0;
+	text-decoration: none;
+}
+
+.video_likeornot img {
+	border: 0;
+	display: inline;
+	padding: 0;
+	margin: 0 0 30px 0;
+	text-decoration: none;
+}
+
+
+/* Layout for mobile version */
+
+@media handheld, only screen and (max-width: 767px) {
+
+.examplecontainer {
+
+body {
+
+}
+
+}
+
+
+/* Provide higher res assets for iPhone 4 */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/* An example of how to override an image with one twice the size for iPhone 4. Specify the original pixel size with background-size.
+.download {
+background: url(../img/downarrow@2x.png) no-repeat;
+background-size: 27px 28px;
+}
+*/
+
+}

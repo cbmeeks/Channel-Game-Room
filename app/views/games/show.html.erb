@@ -1,0 +1,15 @@
+<% content_for(:head) do %>
+	<script type="text/javascript" charset="utf-8">var game_id = <%= @game.id %>;</script>
+<% end %>
+
+<div class="game">
+	<%= render "games/show/head" %>
+	<%= render "games/show/video" %><br />
+	<%= render "games/show/info" %><br />
+	<%= render "games/show/screenshots" %><br />
+	<%= render "games/show/reviews" %><br />
+</div>
+
+<% content_for(:js) do %>
+	<%= javascript_include_tag 'video' %>	
+<% end %>
