@@ -1,5 +1,5 @@
 <% content_for(:head) do %>
-	<script type="text/javascript" charset="utf-8">var game_id = <%= @game.id %>;</script>
+	<script type="text/javascript" charset="utf-8">var game_id = <%= @game.id %>;var video_id = <%= params[:video_id].to_i - 1 || 0 %>;</script>
 <% end %>
 
 <div class="game">

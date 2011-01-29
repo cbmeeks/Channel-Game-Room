@@ -5,13 +5,13 @@
 		</center>
 
 		<span class='video_prevnext'>
-			<%= link_to image_tag("prev.png"), "#", :id => "prevVideo" %>
-			<%= link_to image_tag("next.png"), "#", :id => "nextVideo" %>
+			<%= link_to image_tag("prev.png"), "#", :id => "prevVideo", :title => "Previous video..." %>
+			<%= link_to image_tag("next.png"), "#", :id => "nextVideo", :title => "Next video..." %>
 		</span>
 
 		<span class="video_likeornot">
-			<%= link_to image_tag("snes_small.png"), "#", :id => "likeVideo", :remote => true %>
-			<%= link_to image_tag("redx.png"), "#", :id => "notLikeVideo", :remote => true %>
+			<%= link_to image_tag("snes_small.png"), "#", :id => "likeVideo", :title => "LIKE video" %>
+			<%= link_to image_tag("redx.png"), "#", :id => "notLikeVideo", :title => "Do NOT like video" %>
 		</span>
 
 
@@ -28,7 +28,8 @@
 
 	</div>
 	<div class="fourcol last">
-		<h1>Chat</h1>
+
+		<h2>Chat</h2>
 		
 		<ul>
 			<li>Lorem ipsum dolor sit pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>

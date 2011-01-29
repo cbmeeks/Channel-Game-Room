@@ -6,8 +6,11 @@ class GamesController < ApplicationController
   end
   
   def show
+    @video_id = (params[:video_id].to_i - 1) || 0
+    @video_id = 0 if @video_id < 0
+      
     @game = Game.find(params[:id])
-    @link = (@game.videolinks.first.url_html || "") unless @game.videolinks.first.blank?
+    @link = (@game.videolinks[@video_id].url_html || "") unless @game.videolinks[@video_id].nil?
     
     respond_with( @game )
   end

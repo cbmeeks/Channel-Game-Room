@@ -1,4 +1,5 @@
-var index = 0;
+var index = video_id;
+var current_video;
 
 $(function(){
 
@@ -6,9 +7,12 @@ $(function(){
 		e.preventDefault();
 	});
 	
-
 	$.getJSON( "/games/" + game_id + "/videos.json", function(videos) {
-		
+
+		if( index < 0 || index >= videos.length )
+			index = 0;
+
+		current_video = videos[index];		
 		showVideoInfo(videos);
 		
 		$("#prevVideo").live("click", function() {
@@ -22,9 +26,31 @@ $(function(){
 			showVideoInfo(videos);
 			return false;
 		});
-
-
 	});
+
+
+
+	$("#likeVideo").click(function() {
+		$.ajax({
+			contentType: "application/json",
+			data: {	game_id: game_id,	videolink_id: current_video["videolink"]["id"] },
+			dataType: "json",
+			processData: false,
+			type: "POST",
+			url: "/likes/" + game_id,
+			beforeSend: function(xhr) {
+				xhr.setRequestHeader("X-Http-Method-Override", "PUT");
+			},
+			failure: function(data) {
+				console.log("Failed", data);
+			},
+			success: function(data) {
+				console.log("Success", data);
+			}
+		});
+		return false;
+	});
+
 
 
 });
@@ -56,7 +82,8 @@ function changeChannelUp(videos) {
 
 
 function showVideo(video) {
-	$("#video").html( video["videolink"]["url_html"]);
+	$("#video").html( video["videolink"]["url_html"] );
+	current_video = video;
 }
 
 function showVideoInfo(videos) {
