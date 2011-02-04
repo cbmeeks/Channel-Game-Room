@@ -6,7 +6,7 @@ class Game < ActiveRecord::Base
   accepts_nested_attributes_for :videolinks, :reject_if => lambda { |a| a[:url].blank? }
 
   # Attributes
-  attr_accessible :system_id, :title, :description, :videolinks_attributes
+  attr_accessible :system_id, :title, :description, :moby_url, :videolinks_attributes
   
   # Callbacks
   before_save :update_permalink

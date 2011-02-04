@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110127234347) do
+ActiveRecord::Schema.define(:version => 20110204011835) do
 
   create_table "games", :force => true do |t|
     t.integer  "system_id"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20110127234347) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "permalink"
+    t.string   "moby_url"
   end
 
   create_table "likes", :force => true do |t|
