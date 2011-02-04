@@ -1,18 +1,15 @@
 <div class="row">
-	<div class="eightcol">
- 		<center>
-			<div id="video"><%= raw @link %></div>
-		</center>
+	<div class="twelvecol last">
 
-		<span class='video_prevnext'>
-			<%= link_to image_tag("prev.png"), "#", :id => "prevVideo", :title => "Previous video..." %>
-			<%= link_to image_tag("next.png"), "#", :id => "nextVideo", :title => "Next video..." %>
-		</span>
+ 		<center><div id="video"><%= raw @link %></div></center>
 
-		<span class="video_likeornot">
-			<%= link_to image_tag("snes_small.png"), "#", :id => "likeVideo", :title => "LIKE video" %>
-			<%= link_to image_tag("redx.png"), "#", :id => "notLikeVideo", :title => "Do NOT like video" %>
-		</span>
+		<div class='video_nav'>
+			<ul>
+				<li><%= link_to "Previous", "#", :id => "prevVideo", :title => "Previous video..." %></li>
+				<li><%= link_to "Next", "#", :id => "nextVideo", :title => "Next video..." %></li>
+				<li><%= link_to "Like", "#", :id => "likeVideo", :title => "Like video" %></li>
+			</ul>
+		</div>
 
 
 		<span class="video_jump">
@@ -27,16 +24,5 @@
 		<span class="video_info" id="video_info">Video</span>
 
 	</div>
-	<div class="fourcol last">
-
-		<h2>Chat</h2>
-		
-		<ul>
-			<li>Lorem ipsum dolor sit pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-			<li>Lorem ipsum dolor sit pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-			<li>Lorem ipsum dolor sit pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
-		</ul>
-		
-		
-	</div>
+	
 </div>

@@ -19,7 +19,7 @@ body {
 
 .logo h1 {
 	color: #FFF;
-	margin-top: 20px;
+	margin-top: 34px;
 	
 	font-family: 'Orbitron', serif;
   font-size: 49px;
@@ -30,7 +30,7 @@ body {
   text-transform: none;
   letter-spacing: 0em;
   word-spacing: 0em;
-  line-height: 1.2;
+  line-height: 0.6;
 }
 
 
@@ -55,6 +55,18 @@ body {
 	margin: 0 50px 0 0;
 }
 
+.top_nav .sign_in {
+
+}
+
+.top_nav .sign_in ul {
+	float: right;
+	margin: 0 20px 0 0;
+}
+
+.top_nav .sign_in ul li a {
+	margin: 0 10px 0 0;
+}
 
 
 
@@ -85,6 +97,14 @@ body {
 }
 
 
+.sheet .header .game_system {
+	color: #FF1215;
+	font-size: 0.6em;
+	margin: 0 0 0 50px;
+}
+
+
+
 .video_info {
 	font-size: 0.8em;
 	float: right;
@@ -97,33 +117,22 @@ body {
 	padding-right: 50px;
 }
 
-.video_prevnext {
-	margin-right: 40px;
-}
-.video_prevnext a {
-	border: 0;
-	margin: 0 10px 0 0;
-	padding: 0;
+
+.video_nav {
+	float: left;
 }
 
-.video_prevnext img {
+.video_nav ul {
+	list-style: none;
+}
+
+.video_nav ul li {
 	display: inline;
 }
 
-.video_likeornot a {
-	border: 0;
+.video_nav ul li a {
 	margin: 0 20px 0 0;
-	text-decoration: none;
 }
-
-.video_likeornot img {
-	border: 0;
-	display: inline;
-	padding: 0;
-	margin: 0 0 24px 0;
-	text-decoration: none;
-}
-
 
 
 
