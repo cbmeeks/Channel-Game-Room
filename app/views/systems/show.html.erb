@@ -1,0 +1,9 @@
+<% if @games.present? %>
+	<% @games.each do |game| %>
+		<div class="game">
+			<%= link_to game.title, game %> Videos: <%= game.videolinks.count %>
+		</div>
+	<% end %>
+<% end %>
+
+

@@ -1,0 +1,5 @@
+<% @systems.each do |system| %>
+	<div class="system">
+		<span class="name"><%= link_to system.name, system_games_path(system.slug) %></span>
+	</div>	
+<% end %>

@@ -54,7 +54,8 @@ class GamesController < ApplicationController
   
   
   def videos
-    respond_with( @videos = Game.find(params[:id]).videolinks )
+    @game = Game.find(params[:id])
+    respond_with( @videos = @game.videolinks )
   end
   
   

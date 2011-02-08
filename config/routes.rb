@@ -8,13 +8,19 @@ Channelgameroom::Application.routes.draw do
 
   resources :games
   match "/games/:id/videos" => "games#videos"
-  
-#  match "/likes/videolink" => "likes#videolink"
 
+#  match "/likes/videolink" => "likes#videolink"
   resources :likes do
     collection do
       get "videolink"
     end
+    
+    member do
+      post :update
+    end
   end
+
+  resources :systems
+  match "/systems/:system/games" => "systems#show", :as => :system_games
 
 end

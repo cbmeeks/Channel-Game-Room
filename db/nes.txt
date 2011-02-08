@@ -1,0 +1,250 @@
+/game/nes/89-denn-kysei-uranai">'89 Dennō Kyūsei Uranai 
+/game/nes/1942">1942 
+/game/nes/720">720º 
+/game/nes/action-52">Action 52 
+/game/nes/addams-family-pugsleys-scavenger-hunt">The Addams Family: Pugsley's Scavenger Hunt 
+/game/nes/adventure-island">Adventure Island 
+/game/nes/adventure-island-ii-aliens-in-paradise">Adventure Island II: Aliens in Paradise 
+/game/nes/adventures-of-captain-comic">The Adventures of Captain Comic 
+/game/nes/adventures-of-dino-riki">Adventures of Dino-Riki 
+/game/nes/adventures-of-gilligans-island">The Adventures of Gilligan's Island 
+/game/nes/adventures-of-lolo">Adventures of Lolo 
+/game/nes/adventures-of-lolo-3">Adventures of Lolo 3 
+/game/nes/adventures-of-rad-gravity">The Adventures of Rad Gravity 
+/game/nes/after-burner">After Burner 
+/game/nes/after-burner-ii">After Burner II 
+/game/nes/alien-syndrome">Alien Syndrome 
+/game/nes/altered-beast">Altered Beast 
+/game/nes/amagon">Amagon 
+/game/nes/anticipation">Anticipation 
+/game/nes/arch-rivals">Arch Rivals 
+/game/nes/archon-the-light-and-the-dark">Archon: The Light and the Dark 
+/game/nes/arkanoid">Arkanoid 
+/game/nes/arkanoid-ii-revenge-of-doh">Arkanoid II: Revenge of Doh 
+/game/nes/back-to-the-future">Back to the Future 
+/game/nes/bad-dudes">Bad Dudes 
+/game/nes/bad-street-brawler">Bad Street Brawler 
+/game/nes/bandit-kings-of-ancient-china">Bandit Kings of Ancient China 
+/game/nes/bards-tale-ii-the-destiny-knight">The Bard's Tale II: The Destiny Knight 
+/game/nes/battle-chess">Battle Chess 
+/game/nes/battle-of-olympus">The Battle of Olympus 
+/game/nes/battletoads">Battletoads 
+/game/nes/bible-adventures">Bible Adventures 
+/game/nes/blades-of-steel">Blades of Steel 
+/game/nes/bloody-warriors-shan-go-no-gyakush">Bloody Warriors: Shan Go no Gyakushū 
+/game/nes/blues-brothers">The Blues Brothers 
+/game/nes/bonks-adventure">Bonk's Adventure 
+/game/nes/boulder-dash">Boulder Dash 
+/game/nes/bram-stokers-dracula__">Bram Stoker's Dracula 
+/game/nes/bubble-bobble">Bubble Bobble 
+/game/nes/bump-n-jump">Bump 'N' Jump 
+/game/nes/burgertime">BurgerTime 
+/game/nes/cabal">Cabal 
+/game/nes/california-games">California Games 
+/game/nes/castlevania">Castlevania 
+/game/nes/castlevania-iii-draculas-curse-">Castlevania III: Dracula's Curse  
+/game/nes/caveman-ugh-lympics">Caveman Ugh-Lympics 
+/game/nes/championship-lode-runner">Championship Lode Runner 
+/game/nes/choplifter">Choplifter! 
+/game/nes/classic-concentration">Classic Concentration 
+/game/nes/commando">Commando 
+/game/nes/contra">Contra 
+/game/nes/cool-world">Cool World 
+/game/nes/crystalis">Crystalis 
+/game/nes/cybernoid-the-fighting-machine">Cybernoid: The Fighting Machine 
+/game/nes/darkwing-duck">Darkwing Duck 
+/game/nes/dash-galaxy-in-the-alien-asylum">Dash Galaxy in the Alien Asylum 
+/game/nes/days-of-thunder">Days of Thunder 
+/game/nes/deep-dungeon-iv-kuro-no-yjutsushi">Deep Dungeon IV: Kuro no Yōjutsushi 
+/game/nes/defender-of-the-crown">Defender of the Crown 
+/game/nes/demon-sword">Demon Sword 
+/game/nes/dig-dug">Dig Dug 
+/game/nes/dig-dug-ii-trouble-in-paradise">Dig Dug II: Trouble in Paradise 
+/game/nes/digital-devil-story-megami-tensei">Digital Devil Story: Megami Tensei 
+/game/nes/disneys-aladdin">Disney's Aladdin 
+/game/nes/dizzy-prince-of-the-yolkfolk">Dizzy: Prince of the Yolkfolk 
+/game/nes/donkey-kong">Donkey Kong 
+/game/nes/donkey-kong-3">Donkey Kong 3 
+/game/nes/donkey-kong-jr-jr-sansuu-lesson">Donkey Kong Jr. / Jr. Sansuu Lesson 
+/game/nes/donkey-kong-jr-math">Donkey Kong Jr. Math 
+/game/nes/donkey-kong-junior">Donkey Kong Junior 
+/game/nes/double-dragon">Double Dragon 
+/game/nes/double-dragon-ii-the-revenge">Double Dragon II: The Revenge 
+/game/nes/double-dragon-iii-the-sacred-stones">Double Dragon III: The Sacred Stones 
+/game/nes/double-strike">Double Strike 
+/game/nes/downtown-nekketsu-koushinkyoku-soreyuke-daiundoukai">Downtown Nekketsu Koushinkyoku - Soreyuke Daiun... 
+/game/nes/dr-mario">Dr. Mario 
+/game/nes/dragon-wars">Dragon Wars 
+/game/nes/dragons-of-flame">Dragons of Flame 
+/game/nes/duck-hunt">Duck Hunt 
+/game/nes/duck-tales-2">Duck Tales 2 
+/game/nes/dj-vu-a-nightmare-comes-true">Déjà Vu: A Nightmare Comes True!! 
+/game/nes/elevator-action">Elevator Action 
+/game/nes/elite">Elite 
+/game/nes/excitebike">Excitebike 
+/game/nes/exodus-ultima-iii">Exodus: Ultima III 
+/game/nes/f-15-strike-eagle">F-15 Strike Eagle 
+/game/nes/fantastic-adventures-of-dizzy">The Fantastic Adventures of Dizzy 
+/game/nes/fantasy-zone">Fantasy Zone 
+/game/nes/faxanadu">Faxanadu 
+/game/nes/final-fantasy-ii">Final Fantasy II 
+/game/nes/final-fantasy-iii">Final Fantasy III 
+/game/nes/fist-of-the-north-star">Fist of the North Star 
+/game/nes/flight-of-the-intruder">Flight of the Intruder 
+/game/nes/galaga">Galaga 
+/game/nes/galaxian">Galaxian 
+/game/nes/gauntlet">Gauntlet 
+/game/nes/gauntlet-ii">Gauntlet II 
+/game/nes/gemfire">Gemfire 
+/game/nes/genghis-khan">Genghis Khan 
+/game/nes/genghis-khan-ii-clan-of-the-grey-wolf">Genghis Khan II: Clan of the Grey Wolf 
+/game/nes/ghostbusters">Ghostbusters 
+/game/nes/ghosts-n-goblins">Ghosts 'N Goblins 
+/game/nes/gradius">Gradius 
+/game/nes/guardian-legend">The Guardian Legend 
+/game/nes/gyruss">Gyruss 
+/game/nes/heroes-of-the-lance">Heroes of the Lance 
+/game/nes/high-speed">High Speed 
+/game/nes/hillsfar">Hillsfar 
+/game/nes/hokuto-no-ken">Hokuto no Ken 
+/game/nes/hook">Hook 
+/game/nes/hostage-rescue-mission">Hostage: Rescue Mission 
+/game/nes/ice-hockey">Ice Hockey 
+/game/nes/ikari-warriors">Ikari Warriors 
+/game/nes/immortal">The Immortal 
+/game/nes/impossible-mission-ii">Impossible Mission II 
+/game/nes/indiana-jones-and-the-last-crusade-the-action-game">Indiana Jones and the Last Crusade: The Action ... 
+/game/nes/indiana-jones-and-the-temple-of-doom">Indiana Jones and the Temple of Doom 
+/game/nes/ivan-iron-man-stewarts-super-off-road">Ivan "Iron Man" Stewart's Super Off Road 
+/game/nes/joe-mac-caveman-ninja">Joe & Mac: Caveman Ninja 
+/game/nes/john-elways-quarterback">John Elway's Quarterback 
+/game/nes/jordan-vs-bird-one-on-one">Jordan vs. Bird: One-on-One 
+/game/nes/joust">Joust 
+/game/nes/kabuki-quantum-fighter">Kabuki: Quantum Fighter 
+/game/nes/karateka">Karateka 
+/game/nes/karnov">Karnov 
+/game/nes/kid-dracula">Kid Dracula 
+/game/nes/kid-icarus">Kid Icarus 
+/game/nes/kings-of-the-beach">Kings of the Beach 
+/game/nes/kirbys-adventure">Kirby's Adventure 
+/game/nes/kung-fu-master">Kung-Fu Master 
+/game/nes/lempereur">L'Empereur 
+/game/nes/last-action-hero">Last Action Hero 
+/game/nes/law-of-the-west">Law of the West 
+/game/nes/legend-of-zelda">The Legend of Zelda 
+/game/nes/lemmings">Lemmings 
+/game/nes/lethal-weapon">Lethal Weapon 
+/game/nes/life-force">Life Force 
+/game/nes/little-league-baseball-championship-series">Little League Baseball Championship Series 
+/game/nes/lode-runner">Lode Runner 
+/game/nes/mule">M.U.L.E. 
+/game/nes/muscle">M.U.S.C.L.E. 
+/game/nes/magic-candle">The Magic Candle 
+/game/nes/mahjong__">Mahjong 
+/game/nes/maniac-mansion">Maniac Mansion 
+/game/nes/marble-madness">Marble Madness 
+/game/nes/mario-bros">Mario Bros. 
+/game/nes/mario-is-missing">Mario is Missing! 
+/game/nes/mega-man-2">Mega Man 2 
+/game/nes/mega-man-3">Mega Man 3 
+/game/nes/mega-man-4">Mega Man 4 
+/game/nes/mega-man-5">Mega Man 5 
+/game/nes/mega-man-6">Mega Man 6 
+/game/nes/metal-fighter">Metal Fighter 
+/game/nes/metal-gear">Metal Gear 
+/game/nes/metal-max">Metal Max 
+/game/nes/metroid">Metroid 
+/game/nes/micro-machines">Micro Machines 
+/game/nes/might-and-magic-book-i">Might and Magic: Book I 
+/game/nes/mighty-final-fight">Mighty Final Fight 
+/game/nes/mike-tysons-punch-out">Mike Tyson's Punch-Out!! 
+/game/nes/monopoly">Monopoly 
+/game/nes/ms-pac-man">Ms. Pac-Man 
+/game/nes/mutant-virus">The Mutant Virus 
+/game/nes/nes-open-tournament-golf">NES Open Tournament Golf 
+/game/nes/ninja-gaiden-ii-the-dark-sword-of-chaos">Ninja Gaiden II: The Dark Sword of Chaos 
+/game/nes/nobunagas-ambition">Nobunaga's Ambition 
+/game/nes/nobunagas-ambition-ii">Nobunaga's Ambition II 
+/game/nes/north-south">North & South 
+/game/nes/operation-europe-path-to-victory-1939-45">Operation Europe: Path to Victory 1939-45 
+/game/nes/operation-wolf">Operation Wolf 
+/game/nes/overlord-">Overlord 
+/game/nes/pac-land">Pac-Land 
+/game/nes/pac-man">Pac-Man 
+/game/nes/paperboy">Paperboy 
+/game/nes/paperboy-2">Paperboy 2 
+/game/nes/pipe-dream">Pipe Dream 
+/game/nes/pool-of-radiance">Pool of Radiance 
+/game/nes/popeye-no-eigo-asobi">Popeye no Eigo Asobi 
+/game/nes/power-blade">Power Blade 
+/game/nes/prince-of-persia">Prince of Persia 
+/game/nes/pyramid">Pyramid 
+/game/nes/qix">QIX 
+/game/nes/rad-racer">Rad Racer 
+/game/nes/raid-2020">Raid 2020 
+/game/nes/raid-on-bungeling-bay">Raid on Bungeling Bay 
+/game/nes/rampage">Rampage 
+/game/nes/rampart">Rampart 
+/game/nes/river-city-ransom">River City Ransom 
+/game/nes/robocop-3">RoboCop 3 
+/game/nes/rocket-ranger">Rocket Ranger 
+/game/nes/rodland">Rodland 
+/game/nes/rollerball">Rollerball 
+/game/nes/rushn-attack">Rush'n Attack 
+/game/nes/shadowgate">Shadowgate 
+/game/nes/shinobi">Shinobi 
+/game/nes/shockwave">Shockwave 
+/game/nes/shufflepuck-cafe">Shufflepuck Cafe 
+/game/nes/sid-meiers-pirates">Sid Meier's Pirates! 
+/game/nes/silent-service">Silent Service 
+/game/nes/simpsons-bart-vs-the-space-mutants">The Simpsons: Bart vs. the Space Mutants 
+/game/nes/skate-or-die">Skate or Die 
+/game/nes/ski-or-die">Ski or Die 
+/game/nes/sky-shark">Sky Shark 
+/game/nes/slalom">Slalom 
+/game/nes/space-harrier">Space Harrier 
+/game/nes/space-invaders-">Space Invaders 
+/game/nes/speedball">Speedball 
+/game/nes/spy-hunter">Spy Hunter 
+/game/nes/spy-vs-spy">Spy vs. Spy 
+/game/nes/stargate">Stargate 
+/game/nes/super-mario-bros">Super Mario Bros. 
+/game/nes/super-mario-bros-2">Super Mario Bros. 2 
+/game/nes/super-mario-bros-3">Super Mario Bros. 3 
+/game/nes/super-sprint">Super Sprint 
+/game/nes/tales-of-the-unknown-volume-i-the-bards-tale">Tales of the Unknown: Volume I - The Bard's Tale 
+/game/nes/target-renegade">Target: Renegade 
+/game/nes/tecmo-bowl">Tecmo Bowl 
+/game/nes/tecmo-super-bowl">Tecmo Super Bowl 
+/game/nes/teenage-mutant-ninja-turtles">Teenage Mutant Ninja Turtles 
+/game/nes/teenage-mutant-ninja-turtles-iii-the-manhattan-project">Teenage Mutant Ninja Turtles III: The Manhattan... 
+/game/nes/tetris-2">Tetris 2 
+/game/nes/thexder">Thexder 
+/game/nes/three-stooges">The Three Stooges 
+/game/nes/times-of-lore">Times of Lore 
+/game/nes/tiny-toon-adventures">Tiny Toon Adventures 
+/game/nes/top-gun-the-second-mission">Top Gun: The Second Mission 
+/game/nes/tower-toppler">Tower Toppler 
+/game/nes/treasure-island-dizzy">Treasure Island Dizzy 
+/game/nes/trojan">Trojan 
+/game/nes/ultima-iv-quest-of-the-avatar">Ultima IV: Quest of the Avatar 
+/game/nes/ultima-v-warriors-of-destiny">Ultima V: Warriors of Destiny 
+/game/nes/uncharted-waters">Uncharted Waters 
+/game/nes/uninvited">Uninvited 
+/game/nes/urban-champion">Urban Champion 
+/game/nes/valis-the-fantasm-soldier">Valis: The Fantasm Soldier 
+/game/nes/vegas-dream">Vegas Dream 
+/game/nes/walt-disneys-the-jungle-book">Walt Disney's The Jungle Book 
+/game/nes/wayne-gretzky-hockey">Wayne Gretzky Hockey 
+/game/nes/where-in-time-is-carmen-sandiego">Where in Time is Carmen Sandiego? 
+/game/nes/win-lose-or-draw">Win, Lose, or Draw 
+/game/nes/winter-games">Winter Games 
+/game/nes/wizardry-knight-of-diamonds-the-second-scenario">Wizardry: Knight of Diamonds - The Second Scenario 
+/game/nes/wizardry-legacy-of-llylgamyn-the-third-scenario">Wizardry: Legacy of Llylgamyn - The Third Scenario 
+/game/nes/wizardry-proving-grounds-of-the-mad-overlord">Wizardry: Proving Grounds of the Mad Overlord 
+/game/nes/world-games">World Games 
+/game/nes/yoshis-cookie">Yoshi's Cookie 
+/game/nes/ys-iii-wanderers-from-ys">Ys III: Wanderers from Ys 
+/game/nes/yume-penguin-monogatari">Yume Penguin Monogatari 
+/game/nes/zelda-ii-the-adventure-of-link">Zelda II: The Adventure of Link 
+/game/nes/zodas-revenge-star-tropics-ii">Zoda's Revenge: Star Tropics II

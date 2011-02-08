@@ -1,28 +1,38 @@
 <div class="row">
-	<div class="twelvecol last">
+	<div class="tencol">
 
  		<center><div id="video"><%= raw @link %></div></center>
 
-		<div class='video_nav'>
+		<div class="video_nav">
 			<ul>
 				<li><%= link_to "Previous", "#", :id => "prevVideo", :title => "Previous video..." %></li>
 				<li><%= link_to "Next", "#", :id => "nextVideo", :title => "Next video..." %></li>
-				<li><%= link_to "Like", "#", :id => "likeVideo", :title => "Like video" %></li>
 			</ul>
 		</div>
 
 
-		<span class="video_jump">
+		<div class="video_info" id="video_info">Video</div>
+
+		<div class="video_jump">
 			Jump to:
 			<select>
 				<% @game.videolinks.each_with_index do |v, i| %>
 					<option><%= i + 1 %></option>
 				<% end %>
 			</select>
-		</span>
+		</div>
 
-		<span class="video_info" id="video_info">Video</span>
 
+
+	</div>
+	
+	<div class="twocol last">
+		<div class='rate'>
+			<ul>
+				<li><%= link_to "Like Game", "#", :id => "likeGame", :title => "Like game" %></li>
+				<li><%= link_to "Like Video", "#", :id => "likeVideo", :title => "Like video" %></li>
+			</ul>
+		</div>
 	</div>
 	
 </div>

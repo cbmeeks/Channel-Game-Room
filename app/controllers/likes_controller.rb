@@ -4,35 +4,20 @@ class LikesController < ApplicationController
   
   respond_to :json
   
-  def videolink
-    results = {}
-    
-    # check to see if the user has liked this videolink before
-    if current_user
-      liked = Like.video?(current_user, @vid_id)
 
-      results["status"] = "OK"      
-      results["liked"] = liked
-    else
-      results["status"] = "Error"
-      results["message"] = "User not logged in"
-    end
-
-    respond_with( results.to_json ) 
-  end
-  
-  
   def update
     results = {}
     
     if current_user
-      results["status"] = "OK"  
+      results["status"] = "OK"
+      results["liked"] = Like.likesit(current_user.id, params)      
     else
       results["status"] = "Error"
       results["message"] = "User not logged in"
+      results["liked"] = nil
     end
     
-    respond_with( results.to_json )
+    render :json => results.to_json
   end
   
 

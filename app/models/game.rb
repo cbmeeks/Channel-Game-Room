@@ -11,6 +11,9 @@ class Game < ActiveRecord::Base
   # Callbacks
   before_save :update_permalink
   
+  # Scopes
+  default_scope :order => "title"
+  
   # Validations
   validates_presence_of :system_id, :message => "game system required"
   validates_presence_of :title
@@ -23,5 +26,7 @@ class Game < ActiveRecord::Base
   def update_permalink
     self.permalink = "#{self.title.to_slug}-#{self.system.slug}"
   end
+  
+  
   
 end

@@ -26,6 +26,9 @@ $(function(){
 			showVideoInfo(videos);
 			return false;
 		});
+		
+		console.log(videos);
+		
 	});
 
 
@@ -33,23 +36,32 @@ $(function(){
 	$("#likeVideo").click(function() {
 		$.ajax({
 			contentType: "application/json",
-			data: {	game_id: game_id,	videolink_id: current_video["videolink"]["id"] },
+			data: '{"game_id":' + game_id + ',"videolink_id":' + current_video["videolink"]["id"] + ',"like_type":"videolink"}',
 			dataType: "json",
 			processData: false,
 			type: "POST",
 			url: "/likes/" + game_id,
-			beforeSend: function(xhr) {
-				xhr.setRequestHeader("X-Http-Method-Override", "PUT");
-			},
-			failure: function(data) {
-				console.log("Failed", data);
-			},
 			success: function(data) {
-				console.log("Success", data);
+
 			}
-		});
-		
-		
+		});		
+
+		return false;
+	});
+
+	$("#likeGame").click(function() {
+		$.ajax({
+			contentType: "application/json",
+			data: '{"game_id":' + game_id + ',"videolink_id":' + current_video["videolink"]["id"] + ',"like_type":"game"}',
+			dataType: "json",
+			processData: false,
+			type: "POST",
+			url: "/likes/" + game_id,
+			success: function(data) {
+
+			}
+		});		
+
 		return false;
 	});
 

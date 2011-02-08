@@ -35,6 +35,18 @@ body {
 
 
 
+.game_list {
+}
+
+.game_list a.system {
+	border: 0;
+	display: inline;
+	font-family: 'Molengo', serif;
+	font-size: 1.4em;
+	margin: 0 30px 0 0;
+}
+
+
 
 .top_nav {
 	margin: 0;
@@ -69,6 +81,16 @@ body {
 }
 
 
+.rate ul li a {
+
+	border: 0;
+	display: block;
+	float: left;
+	font-size: 1.8em;
+	margin: 0 0 30px 0;
+}
+
+
 
 .sheet {
 	background: #FFF;
@@ -81,7 +103,6 @@ body {
 	-webkit-box-shadow: #333 0px 0px 15px;
 	box-shadow: #333 0px 0px 15px;
 }
-
 
 .sheet .header ul {
 	float: right;
@@ -96,7 +117,6 @@ body {
 
 }
 
-
 .sheet .header .game_system {
 	color: #FF1215;
 	font-size: 0.6em;
@@ -105,34 +125,33 @@ body {
 
 
 
-.video_info {
-	font-size: 0.8em;
-	float: right;
-	padding-right: 50px;
+.system {
+	height: 40px;
 }
 
-.video_jump {
-	font-size: 0.8em;
-	float: right;
-	padding-right: 50px;
+.system span.name {
+	font-family: 'Molengo', serif;
+	font-size: 1.7em;
+	font-weight: bold;
 }
+
 
 
 .video_nav {
+	display: block;
 	float: left;
-}
-
-.video_nav ul {
-	list-style: none;
-}
-
-.video_nav ul li {
-	display: inline;
+	margin: 0 20px 20px 110px;
 }
 
 .video_nav ul li a {
 	margin: 0 20px 0 0;
 }
+
+.video_info {
+	float: left;
+	margin: 0 30px 0 0;
+}
+
 
 
 
