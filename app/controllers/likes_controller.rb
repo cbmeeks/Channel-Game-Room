@@ -1,16 +1,16 @@
 class LikesController < ApplicationController
-  
-  before_filter :get_ids
-  
   respond_to :json
   
 
-  def update
-    results = {}
+  def it
+    results = {}    
+
+    like_type = ["Videolink", "Game"].find { |e| e == params["like_type"] }.to_s.camelize
+    id = params["id"] || 0
     
     if current_user
-      results["status"] = "OK"
-      results["liked"] = Like.likesit(current_user.id, params)      
+      results["status"] = "OK"      
+      results["liked"] = current_user.likes_the( eval(like_type).where(:id => id).first )
     else
       results["status"] = "Error"
       results["message"] = "User not logged in"
@@ -19,12 +19,6 @@ class LikesController < ApplicationController
     
     render :json => results.to_json
   end
-  
 
-  private
-  
-  def get_ids
-    @vid_id = params[:videolink_id]
-  end
   
 end

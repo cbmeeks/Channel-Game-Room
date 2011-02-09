@@ -9,16 +9,7 @@ Channelgameroom::Application.routes.draw do
   resources :games
   match "/games/:id/videos" => "games#videos"
 
-#  match "/likes/videolink" => "likes#videolink"
-  resources :likes do
-    collection do
-      get "videolink"
-    end
-    
-    member do
-      post :update
-    end
-  end
+  match "/likes/it" => "likes#it", :as => :likes_it
 
   resources :systems
   match "/systems/:system/games" => "systems#show", :as => :system_games

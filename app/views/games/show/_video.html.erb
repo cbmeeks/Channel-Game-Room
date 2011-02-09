@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="tencol">
+	<div class="twelvecol last">
 
  		<center><div id="video"><%= raw @link %></div></center>
 
@@ -7,6 +7,8 @@
 			<ul>
 				<li><%= link_to "Previous", "#", :id => "prevVideo", :title => "Previous video..." %></li>
 				<li><%= link_to "Next", "#", :id => "nextVideo", :title => "Next video..." %></li>
+				<li><%= link_to "Like Game", "#", :id => "likeGame", :title => "Like game" %></li>
+				<li><%= link_to "Like Video", "#", :id => "likeVideo", :title => "Like video" %></li>
 			</ul>
 		</div>
 
@@ -22,17 +24,7 @@
 			</select>
 		</div>
 
+	</div>
 
 
-	</div>
-	
-	<div class="twocol last">
-		<div class='rate'>
-			<ul>
-				<li><%= link_to "Like Game", "#", :id => "likeGame", :title => "Like game" %></li>
-				<li><%= link_to "Like Video", "#", :id => "likeVideo", :title => "Like video" %></li>
-			</ul>
-		</div>
-	</div>
-	
 </div>

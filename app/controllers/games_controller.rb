@@ -54,8 +54,32 @@ class GamesController < ApplicationController
   
   
   def videos
+    results = {}
+    number_of_videolinks = 0
+    
     @game = Game.find(params[:id])
-    respond_with( @videos = @game.videolinks )
+    
+    if @game.present?
+      like = Like.where(:user_id => current_user.id, :likeable_id => @game.id, :likeable_type => "Game").first
+      results["Status"] = "OK"
+      results["game_id"] = @game.id
+      results["liked"] = (like.amount if like.present?) || 0
+      results["videolinks"] = {}
+      
+      @game.videolinks.each_with_index do |vl, i|
+        videolink = {}
+        videolink["id"] = vl.id
+        videolink["url_html"] = vl.url_html
+        results["videolinks"][i] = videolink
+        number_of_videolinks += 1
+      end
+      results["number_of_videolinks"] = number_of_videolinks
+    else
+      results["Status"] = "Error"
+      results["Message"] = "Can't find that game"
+    end
+    
+    respond_with( @videos = results.to_json )
   end
   
   
