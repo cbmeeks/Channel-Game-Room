@@ -9,7 +9,7 @@ Channelgameroom::Application.routes.draw do
   resources :games
   match "/games/:id/videos" => "games#videos"
 
-  match "/likes/it" => "likes#it", :as => :likes_it
+  match "/likes/vote" => "likes#vote", :as => :vote
 
   resources :systems
   match "/systems/:system/games" => "systems#show", :as => :system_games

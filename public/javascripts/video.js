@@ -37,36 +37,41 @@ $(function(){
 
 	$("#likeVideo,#likeGame").click(function() {
 		var self = this;
-		var id, like_type;
+		var like;
 		
-		if( self.id == "likeVideo" ) {
-			like_type = "Videolink";
-			id = current_video["id"];
-		}
-		else if ( self.id == "likeGame" ) {
-			like_type = "Game";
-			id = game_id;
-		}
-		
+		if( self.id == "likeVideo" )
+			like = { id: current_video["id"], like_type: "Videolink", link: self };
+		else if ( self.id == "likeGame" )
+			like = { id: game_id, like_type: "Game", link: self };
+
 		$.ajax({
 			contentType: "application/json",
-			data: '{"id":' + id + ',"like_type":"' + like_type + '"}',
+			data: '{"id":' + like.id + ',"like_type":"' + like.like_type + '"}',
 			dataType: "json",
 			processData: false,
 			type: "POST",
-			url: "/likes/it",
+			url: "/likes/vote",
 			success: function(data) {
-				console.log(data);
+				like["vote"] = data["liked"];
+				toggleLink(like);
 			}
 		});		
 
 		return false;
 	});
-
-
-
-
+	
 });
+
+
+function toggleLink(like) {
+//	if( like["vote"] == 1 )
+//		$("#" + like.link.id).text("Like " + like.like_type);
+//	else
+//		$("#" + like.link.id).text("Hate " + like.like_type);
+}
+
+
+
 
 function changeChannelDown(videos) {
 	var max = videos["number_of_videolinks"] - 1;

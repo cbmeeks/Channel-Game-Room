@@ -6,10 +6,11 @@ class User < ActiveRecord::Base
   
   # Methods
   
-  def likes_the(obj)
+  def toggle_vote(obj)
     like = Like.find_or_initialize_by_likeable_type_and_likeable_id_and_user_id(obj.class.name, obj.id, self.id)
-    like.amount = 1
+    like.amount = (like.amount == 1  ? -1 : 1) || 1
     like.save
+    like.amount
    end
   
   def self.create_with_omniauth(auth)

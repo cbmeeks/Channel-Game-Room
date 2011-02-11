@@ -2,7 +2,7 @@ class LikesController < ApplicationController
   respond_to :json
   
 
-  def it
+  def vote
     results = {}    
 
     like_type = ["Videolink", "Game"].find { |e| e == params["like_type"] }.to_s.camelize
@@ -10,7 +10,7 @@ class LikesController < ApplicationController
     
     if current_user
       results["status"] = "OK"      
-      results["liked"] = current_user.likes_the( eval(like_type).where(:id => id).first )
+      results["liked"] = current_user.toggle_vote( eval(like_type).where(:id => id).first )
     else
       results["status"] = "Error"
       results["message"] = "User not logged in"

@@ -129,18 +129,99 @@ body {
 
 
 .video_nav {
-	display: block;
 	float: left;
-	margin: 0 20px 20px 110px;
+	margin: 0 0 0 204px;
 }
 
 .video_nav ul li a {
-	margin: 0 20px 0 0;
+	background-image:url('Button_Sprite.png');
+	border: 0;
+	height: 25px;
 }
+
+.video_nav ul li a.prev {
+	background-position: -486px 0px;
+	float: left;
+	margin: 0 4px 0 0;
+	width: 92px;
+}
+
+.video_nav ul li a:hover.prev {
+	background-position: -578px 0px;
+	float: left;
+	width: 92px;
+}
+
+.video_nav ul li a.next {
+	background-position: -670px 0px;
+	float: left;
+	margin: 0 90px 0 0;
+	width: 90px;
+}
+
+.video_nav ul li a:hover.next {
+	background-position: -760px 0px;
+	float: left;
+	width: 90px;
+}
+
+.video_nav ul li a.likegame {
+	background-position: 0px 0px;
+	float: left;
+	width: 107px;
+}
+
+.video_nav ul li a:hover.likegame {
+	background-position: -107px 0px;
+	float: left;
+	width: 107px;
+}
+
+.video_nav ul li a.hategame {
+	background-position: -214px 0px;
+	float: left;
+	margin: 0 90px 0 0;
+	width: 29px;
+}
+
+.video_nav ul li a:hover.hategame {
+	background-position: -243px 0px;
+	float: left;
+	width: 29px;
+}
+
+
+.video_nav ul li a.likevideo {
+	background-position: -272px 0px;
+	float: left;
+	width: 107px;
+}
+
+.video_nav ul li a:hover.likevideo {
+	background-position: -379px 0px;
+	float: left;
+	width: 107px;
+}
+
+.video_nav ul li a.hatevideo {
+	background-position: -214px 0px;
+	float: left;
+	width: 29px;
+}
+
+.video_nav ul li a:hover.hatevideo {
+	background-position: -243px 0px;
+	float: left;
+	width: 29px;
+}
+
+
+
+
 
 .video_info {
 	float: left;
-	margin: 0 30px 0 0;
+	margin: 0 30px 0 500px;
 }
 
 

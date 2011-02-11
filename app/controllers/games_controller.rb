@@ -60,7 +60,7 @@ class GamesController < ApplicationController
     @game = Game.find(params[:id])
     
     if @game.present?
-      like = Like.where(:user_id => current_user.id, :likeable_id => @game.id, :likeable_type => "Game").first
+      like = Like.where(:user_id => current_user.id, :likeable_id => @game.id, :likeable_type => "Game").first if current_user
       results["Status"] = "OK"
       results["game_id"] = @game.id
       results["liked"] = (like.amount if like.present?) || 0
