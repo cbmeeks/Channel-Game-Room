@@ -32,13 +32,18 @@ $(function(){
 				$("#likeGame").addClass("gameLiked");
 			if( videos["liked"] == -1 )
 				$("#hateGame").addClass("gameHated");
+				
+			if( video_links[0]["liked"] == 1 ){
+				$("#likeVideo").addClass("videoLiked");
+				$("#hateVideo").removeClass("videoHated");
+			} else if ( video_links[0]["liked"] == -1 ) {
+				$("#likeVideo").removeClass("videoLiked");
+				$("#hateVideo").addClass("videoHated");
+			}
 
 			$("#video .youtube-player").attr({"width":"100%", "height":"700px"});
 		}		
-		
 	});
-
-
 
 	$("#likeVideo,#likeGame").click(function() {
 		var self = this;
@@ -64,7 +69,6 @@ $(function(){
 		return false;
 	});
 
-
 	$("#hateVideo,#hateGame").click(function() {
 		var self = this;
 		var like;
@@ -88,9 +92,6 @@ $(function(){
 
 		return false;
 	});
-
-	
-
 	
 });
 
@@ -107,7 +108,9 @@ function toggleLink(data) {
 			$("#likeGame").removeClass("gameLiked");
 			$("#hateGame").removeClass("gameHated");
 		}
-	} else if( data["like_type"] == "Videolink" ) {
+	} else if( data["like_type"] == "Videolink" ) {		
+		video_links[index]["liked"] = data["liked"];
+				
 		if( data["liked"] == 1 ) {
 			$("#likeVideo").addClass("videoLiked");
 			$("#hateVideo").removeClass("videoHated");
@@ -118,13 +121,8 @@ function toggleLink(data) {
 			$("#likeVideo").removeClass("videoLiked");
 			$("#hateVideo").removeClass("videoHated");
 		}
-	}
-
-	
+	}	
 }
-
-
-
 
 function changeChannelDown(videos) {
 	var max = videos["number_of_videolinks"] - 1;
@@ -138,7 +136,6 @@ function changeChannelDown(videos) {
 	}
 }
 
-
 function changeChannelUp(videos) {
 	var max = videos["number_of_videolinks"] - 1;
 	
@@ -151,11 +148,23 @@ function changeChannelUp(videos) {
 	}
 }
 
-
 function showVideo(video) {
 	$("#video").html( video["url_html"] );
 	$("#video .youtube-player").attr({"width":"100%", "height":"700px"});
 	current_video = video;
+
+	if(video["liked"] == 1) {
+		$("#likeVideo").addClass("videoLiked");
+		$("#hateVideo").removeClass("videoHated");
+	} else if( video["liked"] == -1 ) {
+			$("#likeVideo").removeClass("videoLiked");
+			$("#hateVideo").addClass("videoHated");
+	} else {
+		$("#likeVideo").removeClass("videoLiked");
+		$("#hateVideo").removeClass("videoHated");
+	}
+
+	console.log("Liked", video["liked"]);
 }
 
 function showVideoInfo(number) {
