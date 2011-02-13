@@ -171,7 +171,7 @@ body {
 	width: 107px;
 }
 
-.video_nav ul li a:hover.likegame {
+.video_nav ul li a:hover.likegame, .video_nav ul li a.gameLiked {
 	background-position: -107px 0px;
 	float: left;
 	width: 107px;
@@ -184,7 +184,7 @@ body {
 	width: 29px;
 }
 
-.video_nav ul li a:hover.hategame {
+.video_nav ul li a:hover.hategame, .video_nav ul li a.gameHated {
 	background-position: -243px 0px;
 	float: left;
 	width: 29px;
@@ -197,7 +197,7 @@ body {
 	width: 107px;
 }
 
-.video_nav ul li a:hover.likevideo {
+.video_nav ul li a:hover.likevideo, .video_nav ul li a.videoLiked {
 	background-position: -379px 0px;
 	float: left;
 	width: 107px;
@@ -209,7 +209,7 @@ body {
 	width: 29px;
 }
 
-.video_nav ul li a:hover.hatevideo {
+.video_nav ul li a:hover.hatevideo, .video_nav ul li a.videoHated {
 	background-position: -243px 0px;
 	float: left;
 	width: 29px;

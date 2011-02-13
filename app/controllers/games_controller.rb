@@ -68,8 +68,10 @@ class GamesController < ApplicationController
       
       @game.videolinks.each_with_index do |vl, i|
         videolink = {}
+        like = Like.where(:user_id => current_user.id, :likeable_id => vl.id, :likeable_type => "Videolink").first if current_user
         videolink["id"] = vl.id
         videolink["url_html"] = vl.url_html
+        videolink["liked"] = (like.amount if like.present?) || 0
         results["videolinks"][i] = videolink
         number_of_videolinks += 1
       end

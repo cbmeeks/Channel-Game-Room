@@ -56,11 +56,15 @@
 
 							
 						<%= yield %>
+						
+						<%= render "layouts/disqus" %>
 					</div>
 					
 				</div>
 			</div>
 		</div>
+		
+	
 
 
   	<%= javascript_include_tag ['jquery-1.5.min', 'rails', 'application'] %>

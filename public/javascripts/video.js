@@ -1,5 +1,6 @@
 var index = video_id;
 var current_video;
+var video_links;
 
 $(function(){
 
@@ -8,27 +9,31 @@ $(function(){
 	});
 	
 	$.getJSON( "/games/" + game_id + "/videos.json", function(videos) {
-
 		if( videos["Status"] == "OK" && videos["number_of_videolinks"] > 0 ) {
+			if( index < 0 || index >= videos.length )	index = 0;
 
-			if( index < 0 || index >= videos.length )
-				index = 0;
-
-			current_video = videos["videolinks"][index];		
-			showVideoInfo(videos);
+			current_video = videos["videolinks"][index];
+			video_links = videos["videolinks"];
+			showVideoInfo(videos["number_of_videolinks"]);
 		
 			$("#prevVideo").live("click", function() {
 				changeChannelDown(videos);
-				showVideoInfo(videos);
+				showVideoInfo(videos["number_of_videolinks"]);
 				return false;
 			});
 		
 			$("#nextVideo").live("click", function() {
 				changeChannelUp(videos);
-				showVideoInfo(videos);
+				showVideoInfo(videos["number_of_videolinks"]);
 				return false;
 			});
 
+			if( videos["liked"] == 1 )
+				$("#likeGame").addClass("gameLiked");
+			if( videos["liked"] == -1 )
+				$("#hateGame").addClass("gameHated");
+
+			$("#video .youtube-player").attr({"width":"100%", "height":"700px"});
 		}		
 		
 	});
@@ -38,36 +43,84 @@ $(function(){
 	$("#likeVideo,#likeGame").click(function() {
 		var self = this;
 		var like;
-		
+	
 		if( self.id == "likeVideo" )
-			like = { id: current_video["id"], like_type: "Videolink", link: self };
+			like = { id: current_video["id"], like_type: "Videolink", link: self, likesit: true };
 		else if ( self.id == "likeGame" )
-			like = { id: game_id, like_type: "Game", link: self };
+			like = { id: game_id, like_type: "Game", link: self, likesit: true };
 
 		$.ajax({
 			contentType: "application/json",
-			data: '{"id":' + like.id + ',"like_type":"' + like.like_type + '"}',
+			data: '{"id":' + like.id + ',"like_type":"' + like.like_type + '","likesit":' + like.likesit + '}',
 			dataType: "json",
 			processData: false,
 			type: "POST",
 			url: "/likes/vote",
 			success: function(data) {
-				like["vote"] = data["liked"];
-				toggleLink(like);
+				toggleLink(data);
 			}
 		});		
 
 		return false;
 	});
+
+
+	$("#hateVideo,#hateGame").click(function() {
+		var self = this;
+		var like;
+
+		if( self.id == "hateVideo" )
+			like = { id: current_video["id"], like_type: "Videolink", link: self, likesit: false };
+		else if ( self.id == "hateGame" )
+			like = { id: game_id, like_type: "Game", link: self, likesit: false };
+
+		$.ajax({
+			contentType: "application/json",
+			data: '{"id":' + like.id + ',"like_type":"' + like.like_type + '","likesit":' + like.likesit + '}',
+			dataType: "json",
+			processData: false,
+			type: "POST",
+			url: "/likes/vote",
+			success: function(data) {
+				toggleLink(data);
+			}
+		});		
+
+		return false;
+	});
+
+	
+
 	
 });
 
 
-function toggleLink(like) {
-//	if( like["vote"] == 1 )
-//		$("#" + like.link.id).text("Like " + like.like_type);
-//	else
-//		$("#" + like.link.id).text("Hate " + like.like_type);
+function toggleLink(data) {
+	if( data["like_type"] == "Game" ) {
+		if( data["liked"] == 1 ) {
+			$("#likeGame").addClass("gameLiked");
+			$("#hateGame").removeClass("gameHated");
+		} else if ( data["liked"] == -1 ) {
+			$("#likeGame").removeClass("gameLiked");
+			$("#hateGame").addClass("gameHated");
+		} else {
+			$("#likeGame").removeClass("gameLiked");
+			$("#hateGame").removeClass("gameHated");
+		}
+	} else if( data["like_type"] == "Videolink" ) {
+		if( data["liked"] == 1 ) {
+			$("#likeVideo").addClass("videoLiked");
+			$("#hateVideo").removeClass("videoHated");
+		} else if ( data["liked"] == -1 ) {
+			$("#likeVideo").removeClass("videoLiked");
+			$("#hateVideo").addClass("videoHated");
+		} else {
+			$("#likeVideo").removeClass("videoLiked");
+			$("#hateVideo").removeClass("videoHated");
+		}
+	}
+
+	
 }
 
 
@@ -101,12 +154,13 @@ function changeChannelUp(videos) {
 
 function showVideo(video) {
 	$("#video").html( video["url_html"] );
+	$("#video .youtube-player").attr({"width":"100%", "height":"700px"});
 	current_video = video;
 }
 
-function showVideoInfo(videos) {
-	if( videos["number_of_videolinks"] > 0 )
-		$("#video_info").html("Video " + (index + 1) + " of " + videos["number_of_videolinks"]);
+function showVideoInfo(number) {
+	if( number > 0 )
+		$("#video_info").html("Video " + (index + 1) + " of " + number);
 	else
 		$("#video_info").html("No videos added");
 }
