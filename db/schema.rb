@@ -12,15 +12,8 @@
 
 ActiveRecord::Schema.define(:version => 20110204011835) do
 
-  create_table "games", :force => true do |t|
-    t.integer  "system_id"
-    t.string   "title"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "permalink"
-    t.string   "moby_url"
-  end
+# Could not dump table "games" because of following StandardError
+#   Unknown type 'tsvector' for column 'search_vector'
 
   create_table "likes", :force => true do |t|
     t.integer  "user_id"

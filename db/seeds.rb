@@ -6,6 +6,11 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 
+System.create!(:name => "Nintendo Entertainment System", :company => "Ninteno", :slug => "nes")
+System.create!(:name => "Super Nintendo", :company => "Nintendo", :slug => "snes")
+System.create!(:name => "Sega Master System", :company => "Sega", :slug => "sms")
+System.create!(:name => "Sega Genesis", :company => "Sega", :slug => "genesis")
+
 @sms = System.find_by_name("Sega Master System")
 if @sms.present?
   Game.create(:system_id => @sms.id, :moby_url => "/game/sega-master-system/ace-of-aces", :title => "Ace of Aces")

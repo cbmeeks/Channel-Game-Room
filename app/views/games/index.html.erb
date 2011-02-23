@@ -1,13 +1,33 @@
-<div class="game_list">
-	<h2>Choose System</h2>
-	<% System.all.each do |system| %>
-		<%= link_to system.name, "#", :class => "system" %>
-	<% end %><br /><hr />
+<% content_for(:sheet_header) do %>
+	<ul>
+		<li><%= link_to "New Game", new_game_path %></li>
+	</ul>
+<% end %>
 
 
-	<% @games.each do |game| %>
-		<%= link_to "#{game.title}", game %><span class="game_list_system"><%= game.system.name %></span>
+<div class="game_search">
+	<% form_tag games_path, :method => 'get' do %>
+		<p>
+			<%= text_field_tag :search, params[:search] %>
+			<%= submit_tag "Search", :name => nil %>
+		</p>
 	<% end %>
 </div>
 
-<%= link_to "New Game", new_game_path %>
+<div class="game_list">
+	<div class="container">
+		<div class="row">			
+			<% @games.each do |game| %>
+				<div class="sixcol">
+					<%= link_to "#{game.title}", game %><br />
+					<%= game.description %>
+				</div>
+				<div class="sixcol last game_list_system">
+					<%= game.system.name %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>
+
+

@@ -1,8 +1,12 @@
 class GamesController < ApplicationController
   respond_to :html, :json
 
-  def index
-    @games = Game.all
+  def index    
+    if params[:search].present?
+      @games = Game.search(params[:search])
+    else
+      @games = Game.all
+    end
   end
   
   def show

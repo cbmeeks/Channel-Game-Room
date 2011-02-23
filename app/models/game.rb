@@ -21,10 +21,17 @@ class Game < ActiveRecord::Base
   def to_param
     "#{id}-#{permalink}"
   end
-  
-  
+    
   def update_permalink
     self.permalink = "#{self.title.to_slug}-#{self.system.slug}"
+  end
+  
+  def self.search(query)
+    conditions = <<-EOS
+      search_vector @@ to_tsquery('english', ?)
+    EOS
+    
+    where(conditions, query)
   end
   
   
