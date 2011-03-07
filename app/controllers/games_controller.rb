@@ -3,9 +3,9 @@ class GamesController < ApplicationController
 
   def index    
     if params[:search].present?
-      @games = Game.search(params[:search])
+      @games = Game.search(params[:search]).page(params[:page]).per(25)
     else
-      @games = Game.all
+      @games = Game.page(params[:page]).per(25)
     end
   end
   

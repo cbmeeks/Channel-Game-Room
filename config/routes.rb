@@ -13,5 +13,6 @@ Channelgameroom::Application.routes.draw do
 
   resources :systems
   match "/systems/:system/games" => "systems#show", :as => :system_games
+  match "/systems/:system/games/:filter" => "systems#show", :as => :system_games_filtered
 
 end

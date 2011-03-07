@@ -1,9 +1,32 @@
 <% if @games.present? %>
-	<% @games.each do |game| %>
-		<div class="game">
-			<%= link_to game.title, game %> Videos: <%= game.videolinks.count %>
-		</div>
-	<% end %>
-<% end %>
+<div class="row">
+	<div class="eightcol">
 
+		<div class="game_list">
+			<h1><%= "#{@system.name} Games" if @system.present? %></h1>
+			
+			<div class="game_quick_nav">
+				<ul>
+					<%= a_to_z_links %>
+				</ul>
+			</div>
+			
+			<table>
+					<tr>
+						<th>Game</th>
+						<th>Videos</th>
+					</tr>
+				<% @games.each do |game| %>
+					<tr>
+						<td><%= link_to game.title, game %></td>
+						<td><%= game.videolinks.count %></td>
+					</tr>
+				<% end %>
+			</table>
+		</div>
+	</div>
+	<div class="fourcol last">
+	</div>
+</div>
+<% end %>
 

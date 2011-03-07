@@ -2,9 +2,10 @@ source 'http://rubygems.org'
 
 gem 'awesome_print'
 #gem "auto_html"          -- using modified plugin
+gem 'kaminari'
 gem 'nifty-generators'
 gem 'rails', '3.0.1'
-#gem 'mysql2'
+
 gem 'omniauth'
 gem 'pg'
 gem 'simple_form'

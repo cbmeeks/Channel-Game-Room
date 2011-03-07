@@ -9,40 +9,43 @@ $(function(){
 	});
 	
 	$.getJSON( "/games/" + game_id + "/videos.json", function(videos) {
-		if( videos["Status"] == "OK" && videos["number_of_videolinks"] > 0 ) {
-			if( index < 0 || index >= videos.length )	index = 0;
-
-			current_video = videos["videolinks"][index];
-			video_links = videos["videolinks"];
-			showVideoInfo(videos["number_of_videolinks"]);
-		
-			$("#prevVideo").live("click", function() {
-				changeChannelDown(videos);
-				showVideoInfo(videos["number_of_videolinks"]);
-				return false;
-			});
-		
-			$("#nextVideo").live("click", function() {
-				changeChannelUp(videos);
-				showVideoInfo(videos["number_of_videolinks"]);
-				return false;
-			});
+		if( videos["Status"] == "OK" ) {
 
 			if( videos["liked"] == 1 )
 				$("#likeGame").addClass("gameLiked");
 			if( videos["liked"] == -1 )
 				$("#hateGame").addClass("gameHated");
-				
-			if( video_links[0]["liked"] == 1 ){
-				$("#likeVideo").addClass("videoLiked");
-				$("#hateVideo").removeClass("videoHated");
-			} else if ( video_links[0]["liked"] == -1 ) {
-				$("#likeVideo").removeClass("videoLiked");
-				$("#hateVideo").addClass("videoHated");
-			}
 
-			$("#video .youtube-player").attr({"width":"100%", "height":"700px"});
-		}		
+			if( videos["number_of_videolinks"] > 0 ) {
+				if( index < 0 || index >= videos.length )	index = 0;
+
+				current_video = videos["videolinks"][index];
+				video_links = videos["videolinks"];
+				showVideoInfo(videos["number_of_videolinks"]);
+		
+				$("#prevVideo").live("click", function() {
+					changeChannelDown(videos);
+					showVideoInfo(videos["number_of_videolinks"]);
+					return false;
+				});
+		
+				$("#nextVideo").live("click", function() {
+					changeChannelUp(videos);
+					showVideoInfo(videos["number_of_videolinks"]);
+					return false;
+				});
+				
+				if( video_links[0]["liked"] == 1 ){
+					$("#likeVideo").addClass("videoLiked");
+					$("#hateVideo").removeClass("videoHated");
+				} else if ( video_links[0]["liked"] == -1 ) {
+					$("#likeVideo").removeClass("videoLiked");
+					$("#hateVideo").addClass("videoHated");
+				}
+
+				$("#video .youtube-player").attr({"width":"100%", "height":"700px"});
+			}
+		}
 	});
 
 	$("#likeVideo,#likeGame").click(function() {
@@ -63,7 +66,7 @@ $(function(){
 			url: "/likes/vote",
 			success: function(data) {
 				toggleLink(data);
-			}
+			}	
 		});		
 
 		return false;

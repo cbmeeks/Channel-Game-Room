@@ -5,16 +5,17 @@
 
 		<div class="video_nav">
 			<ul>
-				<li><%= link_to "", "#", :id => "prevVideo", :title => "Previous video...", :class => "prev" %></li>
-				<li><%= link_to "", "#", :id => "nextVideo", :title => "Next video...", :class => "next" %></li>
+				<% if @link.present? %>
+					<li><%= link_to "", "#", :id => "prevVideo", :title => "Previous video...", :class => "prev" %></li>
+					<li><%= link_to "", "#", :id => "nextVideo", :title => "Next video...", :class => "next" %></li>
+					<% if current_user %>
 
-				<% if current_user %>
+						<li><%= link_to "", "#", :id => "likeGame", :title => "Like game", :class => "likegame" %></li>
+						<li><%= link_to "", "#", :id => "hateGame", :title => "Hate game", :class => "hategame" %></li>
 
-					<li><%= link_to "", "#", :id => "likeGame", :title => "Like game", :class => "likegame" %></li>
-					<li><%= link_to "", "#", :id => "hateGame", :title => "Hate game", :class => "hategame" %></li>
-
-					<li><%= link_to "", "#", :id => "likeVideo", :title => "Like video", :class => "likevideo" %></li>
-					<li><%= link_to "", "#", :id => "hateVideo", :title => "Hate video", :class => "hatevideo" %></li>
+						<li><%= link_to "", "#", :id => "likeVideo", :title => "Like video", :class => "likevideo" %></li>
+						<li><%= link_to "", "#", :id => "hateVideo", :title => "Hate video", :class => "hatevideo" %></li>
+					<% end %>
 				<% end %>
 			</ul>
 		</div>
